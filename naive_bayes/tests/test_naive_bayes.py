@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 # load the file
-def tes_nb_class():
+def test_nb_class():
     with open('tests/data/docs.txt', 'r') as f:
         content = f.readlines()
     label=[]
@@ -45,7 +45,7 @@ def tes_nb_class():
     # test3
     assert np.allclose(np.sum(likelihoods, axis=1), [1.0, 1.0], atol=0.05)
 
-tes_nb_class()
+test_nb_class()
         
 
 
